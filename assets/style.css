@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: var(--light);
+    background-color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -20,6 +20,7 @@ p {
 a {
     color: var(--light);
     text-decoration: none;
+    cursor: pointer;
  }
 
 h2 {
@@ -41,21 +42,20 @@ h3 {
 }
 
 h4 {
-    font-size: 25px;
+    font-size: 28px;
     font-family: 'Courier New', Courier, monospace;
-    align-self: center;
     grid-column: 3 / 7;
     grid-row: 1;
     padding-top: 20%;
-    align-self: stretch;
-    margin-top: 20%;
+    margin-top: 10%;
+    padding-left: 10px;
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: auto;
-    background-color: var(--light);
+    /* background-color: var(--light); */
 }
 
 .header {
@@ -72,8 +72,8 @@ h4 {
     align-self: flex-end;
     display:inline-flex;
     padding: 10px 20px 8px 40px;
-    border-right: solid var(--light);
-    border-bottom: solid var(--light) 3px;
+    /* border-right: solid var(--light);
+    border-bottom: solid var(--light) 3px; */
 }
 
 .navigation {
@@ -95,7 +95,7 @@ h4 {
 
 .sidebar {
     display: grid;
-    /* background-color: var(--tan); */
+    /* background-color: var(--light); */
     grid-column: 1;
 }
 
@@ -127,11 +127,12 @@ h4 {
 }
 
 .about-me p {
-    margin-right: 5%;
+    margin-right: 15%;
     grid-column: 3 / span 6;
     grid-row: 2;
     align-self: stretch;
-    padding: 15px 15px 100px 0;
+    padding: 15px 50px 10px 10px;
+    border-bottom: solid var(--dark-pink) 1px;
 }
 
 .portfolio-images {
