@@ -11,13 +11,6 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    /* background-color: var(--light); */
-}
-
 p {
     font-size: 16px;
     line-height: 1.25;
@@ -36,9 +29,9 @@ a {
     align-self:center;
     text-align: right;
     border-bottom: solid var(--pink) 1px;
-    /* border-right: solid var(--pink) 1px; */
     padding-right: 20px;
     margin-left: 50px;
+    color: black;
 }
 
 /* navigation & portfolio text*/
@@ -53,10 +46,8 @@ h3 {
     
 }
 
-/* headline text within paragraphs */
-
 /* Header Information */
-.header {
+header {
     grid-area: header;
     display: grid;
     background-image: url(./images/header-backgound.png);
@@ -79,7 +70,6 @@ h3 {
     align-self: left;
     padding: 30px 0px;
     margin-top: 17px;
-    /* margin-left: -15px; */
 }
 
 .nav:hover{
@@ -91,154 +81,157 @@ h3 {
     transition-duration: .25s;
 }
 
-/* Specific to SIDEBAR */
-.sidebar {
-    display: grid;
-    /* background-color: var(--light); */
-    grid-column: 1;
-}
-
-.sidebar .break {
-    padding: 40px 0;
-    height: 50px;
-}
-
 /* Start ABOUT ME section */
 .about-me {
     display: grid;
-    grid-column: 2 / span 6;
-    /* margin-top: 20px; */
-    grid-template-columns: repeat(4 1fr);
-    grid-template-rows: auto;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.about-me #about {
+    grid-column: 1;
+    grid-row: 1 span / 2;
+    align-self: flex-end;
 }
 
 .about-me #jocelyn {
-    grid-auto-flow: row;
-    grid-row: 1 / span 3;
+    display: flex;
+    grid-row: 1 / span 2;
+    grid-column: 2;
     align-self: center;
-    width: 18vw;
-    visibility: visible;
     object-fit: cover;
     object-position: center center;
-    height: 30vh;
-    grid-column: 2;
+    width: 80%;
+    height: 80%;
     border: transparent;
     border-radius: 200px;
     padding: 20px;
-    /* margin-top: 15%; */
+    margin-top: 10%;
 }
 
 .about-me h4 {
     font-size: 28px;
     font-family: 'Courier New', Courier, monospace;
-    grid-column: 3 / span 6;
+    grid-column: 3;
     grid-row: 1;
     padding: 10% 0 5% 0;
-    padding-left: 10px;
+    /* padding-left: 10px; */
+    display: flex;
 }
 
-
 .about-me p {
-    grid-column: 3 / span 6;
+    grid-column: 3;
     grid-row: 2;
     border-bottom: solid var(--dark-pink) 1px;
-    align-self: stretch;
-    padding: 0px 20px 10px 10px;
+    margin-bottom: 15%;    
     margin-right: 15%;
+    display: flex;
 }
 
 /* Start PORTFOLIO section */
-.portfolio-images {
-    grid-column: 2 / span 6;
-    grid-row: 3 / span 2;
-    padding: 25px 100px 25px 50px;
+
+.portfolio {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    margin-right: 5%;
+    grid-template-columns: 1.1fr 1.5fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 25px;
+}
+
+.portfolio #portfolio {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.portfolio #one {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    background-color: var(--gray);
+}
+
+.portfolio h3 {
+    align-self: center;
+    margin: 15px;
+    display: flex;
+}
+
+#one:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+.portfolio #two {
+    display: flex;
+    grid-column: 3;
+    background-color: var(--gray);
+}
+
+.portfolio #three {
+    display: flex;
+    grid-column: 4;
+    background-color: var(--pink);
+}
+
+.portfolio #four {
+    display: flex;
+    grid-column: 3;
+    grid-row: 2;
+    background-color: var(--gray);
+}
+
+.portfolio #five {
+    display: flex;
+    grid-column: 4;
+    grid-row: 2;
+    background-color: var(--pink);
+}
+
+
+.portfolio-images {
+    grid-column: 3 / span 2;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .portfolio-images img {
-    grid-auto-flow: row;
+    max-height: 200px;
     padding: 5px;
-    justify-content: space-evenly;
-    width: 15vw;
-    visibility: visible;
     object-fit: cover;
     object-position: center center;
-    height: 30vh;
+
 }
 
-.overlay {
-    position: absolute; 
-    width: 14vw;
-    bottom: 0; 
-    opacity:0;
-    transition: .25s ease;
-    margin-left: 5px;
-    padding: 5px;
-    color: var(--light);
-    margin-bottom: 35px;
-  }
-
-.overlay h3 {
-      font-size: 20px;
-  }
-
- #one:hover .overlay {
-     background-color: var(--tan);
-    opacity: 1;
-  }
-
-  #two:hover .overlay {
-    background-color: var(--gray);
-    opacity: 1;
-  }
-
-  #three:hover .overlay {
-    background-color: var(--pink);
-    opacity: 1;
-  }
-
-  #four:hover .overlay {
-    background-color: var(--tan);
-   opacity: 1;
- }
-
- #five:hover .overlay {
-   background-color: var(--gray);
-   opacity: 1;
- }
-
- #six:hover .overlay {
-   background-color: var(--pink);
-   opacity: 1;
- }
-
- #seven:hover .overlay {
-    background-color: var(--tan);
-   opacity: 1;
- }
-
- #eight:hover .overlay {
-   background-color: var(--gray);
-   opacity: 1;
- }
-
 /* Start CONTACT section */
+.contact {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: 1fr 3fr;
+}
 .contact p {
-    padding-top: 30px;
-    align-self: flex-end;
+    /* padding-top: 300px; */
     text-align: center;
+    align-content: center;
 }
 
 /* Start RESUME section */
+.resume {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: 1fr 3fr;
+}
+
 .resume p {
     padding-top: 30px;
-    align-self: flex-end;
     text-align: center;
+    align-content: center;
 }
 
 .footer {
-    grid-area: footer;
+    margin-top: 200px;
     grid-row: 10;
     grid-column: 1 / span 8;
     padding: 10px;
@@ -246,4 +239,3 @@ h3 {
     color: var(--light);
     background-color: var(--dark-pink);
 }
-
