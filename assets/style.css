@@ -132,24 +132,16 @@ header {
 /* Start PORTFOLIO section */
 
 .portfolio {
-    display: grid;
+    display: flex;
     margin-top: 20px;
     margin-right: 5%;
-    grid-template-columns: 1.1fr 1.5fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    /* grid-template-columns: 1.1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
     gap: 25px;
 }
 
 .portfolio #portfolio {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-}
-
-.portfolio #one {
-    display: flex;
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    background-color: var(--gray);
+    flex: 1;
 }
 
 .portfolio h3 {
@@ -158,36 +150,67 @@ header {
     display: flex;
 }
 
+.portfolio #one {
+    flex: 2;
+    background-color: var(--gray);
+}
+
 #one:hover {
     background-color: var(--dark-pink);
     cursor: pointer;
     transition-duration: .25s;
 }
 
-.portfolio #two {
+.placeholder {
+    flex: 1;
+    flex-wrap: wrap;
+    /* grid-column: 3 4;
+    grid-row: 1 ;
     display: flex;
-    grid-column: 3;
+    flex-wrap: wrap; */
+    /* padding: 10px; */
+}
+
+.placeholder #two {
+    height: 50%;
+    width: 50%;
+    /* display: flex; */
+    /* grid-column: 3; */
     background-color: var(--gray);
+    /* padding-left: 5px; */
+
 }
 
-.portfolio #three {
-    display: flex;
-    grid-column: 4;
+.placeholder #three {
+    height: 50%;
+    width: 50%;
+    /* display: flex; */
+    /* grid-column: 4; */
     background-color: var(--pink);
+    /* padding-left: 5px; */
+
 }
 
-.portfolio #four {
-    display: flex;
-    grid-column: 3;
+.placeholder #four {
+    height: 50%;
+    width: 50%;
+    /* display: flex; */
+    /* grid-column: 3; */
     grid-row: 2;
     background-color: var(--gray);
+    /* padding-left: 5px; */
+
 }
 
-.portfolio #five {
-    display: flex;
-    grid-column: 4;
+.placeholder #five {
+    height: 50%;
+    width: 50%;
+    /* display: flex; */
+    /* grid-column: 4; */
     grid-row: 2;
     background-color: var(--pink);
+    /* padding-left: 5px; */
+
 }
 
 
