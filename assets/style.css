@@ -133,26 +133,37 @@ header {
 
 .portfolio {
     display: flex;
+    /* flex: 2, 2, 1; */
+    /* flex-wrap: wrap; */
     margin-top: 20px;
-    margin-right: 5%;
+    /* margin-right: 5%; */
     /* grid-template-columns: 1.1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; */
-    gap: 25px;
+    gap: 0 25px;
 }
 
-.portfolio #portfolio {
-    flex: 1;
+#portfolio {
+    flex-basis: 23%;
 }
 
 .portfolio h3 {
     align-self: center;
-    margin: 15px;
-    display: flex;
+    margin: 100px 15px;
 }
 
-.portfolio #one {
-    flex: 2;
+.portfolio p {
+    font-family: 'Courier New', Courier, monospace;
+    align-self: center;
+    margin: 30% 15px;
+    padding: 0 20px;
+    border-bottom: solid 1px var(--light);
+    border-left: solid 1px var(--light);
+}
+
+#one {
+    flex-basis: 25%;
     background-color: var(--gray);
+    margin: .5% 0;
 }
 
 #one:hover {
@@ -162,57 +173,55 @@ header {
 }
 
 .placeholder {
-    flex: 1;
-    flex-wrap: wrap;
-    /* grid-column: 3 4;
-    grid-row: 1 ;
+    flex-basis: 52%;
     display: flex;
-    flex-wrap: wrap; */
-    /* padding: 10px; */
-}
-
-.placeholder #two {
-    height: 50%;
-    width: 50%;
-    /* display: flex; */
-    /* grid-column: 3; */
-    background-color: var(--gray);
-    /* padding-left: 5px; */
+    flex-wrap: wrap;
 
 }
 
-.placeholder #three {
-    height: 50%;
-    width: 50%;
-    /* display: flex; */
-    /* grid-column: 4; */
+#two {
     background-color: var(--pink);
-    /* padding-left: 5px; */
-
+    margin: 5px;
 }
 
-.placeholder #four {
-    height: 50%;
-    width: 50%;
-    /* display: flex; */
-    /* grid-column: 3; */
-    grid-row: 2;
+#two:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+#three {
     background-color: var(--gray);
-    /* padding-left: 5px; */
-
+    margin: 5px;
 }
 
-.placeholder #five {
-    height: 50%;
-    width: 50%;
-    /* display: flex; */
-    /* grid-column: 4; */
-    grid-row: 2;
+#three:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+#four {
     background-color: var(--pink);
-    /* padding-left: 5px; */
-
+    margin: 5px;
 }
 
+#four:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+#five {
+    background-color: var(--gray);
+    margin: 5px;
+}
+
+#five:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
 
 .portfolio-images {
     grid-column: 3 / span 2;
