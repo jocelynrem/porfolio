@@ -26,12 +26,12 @@ a {
 /* sidebar text*/
  h2 {
     font-size: 35px;
-    align-self:center;
     text-align: right;
     border-bottom: solid var(--pink) 1px;
     padding-right: 20px;
     margin-left: 50px;
     color: black;
+    align-self: center;
 }
 
 /* navigation & portfolio text*/
@@ -68,7 +68,6 @@ header {
 .navigation {
     grid-column: 2;
     grid-row: 1;
-    align-self: left;
     padding: 10px 0px;
     margin-top: 10px;
 }
@@ -108,8 +107,7 @@ header {
     height: 80%;
     border: transparent;
     border-radius: 200px;
-    padding: 20px;
-    margin-top: 10%;
+    margin-left: 10%;
 }
 
 .about-me h4 {
@@ -118,8 +116,8 @@ header {
     grid-column: 3;
     grid-row: 1;
     padding: 10% 0 5% 0;
-    /* padding-left: 10px; */
     display: flex;
+    align-items: end;
 }
 
 .about-me p {
@@ -129,6 +127,7 @@ header {
     margin-bottom: 15%;    
     margin-right: 15%;
     display: flex;
+    padding-bottom: 20px;
 }
 
 /* Start PORTFOLIO section */
@@ -241,9 +240,7 @@ header {
     grid-template-columns: 1fr 3fr;
 }
 .contact p {
-    /* padding-top: 300px; */
     text-align: center;
-    align-content: center;
 }
 
 /* Start RESUME section */
@@ -256,17 +253,13 @@ header {
 .resume p {
     padding-top: 30px;
     text-align: center;
-    align-content: center;
 }
 
 footer {
-    display: block;
-    width: 100%;
+    display: flex;
     margin-top: 200px;
-    grid-row: 10;
-    grid-column: 1 2 3;
     padding: 10px;
-    text-align: center;
     color: var(--light);
     background-color: var(--dark-pink);
+    justify-content: center;
 }
