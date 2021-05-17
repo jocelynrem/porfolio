@@ -1,54 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>J. Remington</title>
-    <link rel="stylesheet" href="./assets/reset.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/materialize.css" media="screen,projection" />
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <header>
-        <img id="my-name" src="./assets/images/name-logo.png">
-    
-        <div class="navigation">
-            <h3 class="nav"><a href="#jocelyn">About</h3></a>
-            <h3 class="nav"><a href="#portfolio-link">Portfolio</h3></a>
-            <h3 class="nav"><a href="#contact">Contact</h3></a>
-            <h3 class="nav"><a href="#resume">Resume</h3></a>
+    <header class="row">
+        <div class="col s12 m2 push-m1">
+            <img class="align-right" id="thumbsUpImg" src="./assets/images/thumbs-up.png"
+                alt="girl sitting making thumbs up gesture">
+        </div>
+        <div class='col s12 m5 push-m4'>
+            <h2 class="right" id="bio"> Jocelyn Remington </h2>
         </div>
     </header>
-        
-    <div class="about-me">
+
+    <div class="navHolder row">
+        <ul id="nav-mobile col s12" class="right hide-on-small-and-down">
+            <li class="nav"><a href="#jocelyn">About</a></li>
+            </h3>
+            <li class="nav"><a href="#portfolio-link">Portfolio</a></li>
+            <li class="nav"><a href="#resume">Resume</a></li>
+            <li class="nav"><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- <div class="about-me">
         <h2 id="about" class="sidebar">About</h2>
         <img id="jocelyn" src="./assets/images/IMG_7071.jpg" alt="picture of Jocelyn">
         <h4>Education & Technology</h4>
-        <p> Welcome to my page! I am an elementary school teacher passionate about education, kids, and technology.  I am especially passionate about combining those things to make better educational experiences for kids. </p>
-    </div>
+        <p> Welcome to my page! I am an elementary school teacher passionate about education, kids, and technology. I am
+            especially passionate about combining those things to make better educational experiences for kids. </p>
+    </div> -->
 
-    <div class="portfolio" id="portfolio-link"> 
-        <h2 id="portfolio" class="sidebar">Portfolio</h2>
-        <div id="one"><h3>Portfolio Place Holder</h3></div>
-        <div class="placeholder">
-            <div id="two"><p>Place Holder</p></div>
-            <div id="three"><p>Place Holder</p></div>
-            <div id="four"><p>Place Holder</p></div>
-            <div id="five"><p>Place Holder</p></div>
+    <div class="portfolio" id="portfolio-link">
+        <div class="row">
+            <div class="col s10 m4 push-s2">
+                <div class="card small cardText">
+                    <div class="center card-title">
+                        <a href="https://thompsonel11.github.io/Project_1/" target="_blank">Pour<br>Decisions</a>
+                    </div>
+                    <h6 class="center"><br>
+                        <a href="https://github.com/thompsonel11/Project_1" target="_blank">github repository</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="col s10 m4 push-m1 push-s2">
+                <div class="card small cardText">
+                    <div class="center card-title">
+                        <a href="https://jocelynrem.github.io/Code-Quiz/" target="_blank">Code<br>Quiz</a>
+                    </div>
+                    <h6 class="center"><br>
+                        <a href="https://github.com/jocelynrem/Code-Quiz" target="_blank">github repository</a>
+                    </h6>
+                </div>
+            </div>
+            <div class="col s10 m4 push-m2 push-s2">
+                <div class="card small cardText">
+                    <div class="center card-title">
+                        <a href="https://jocelynrem.github.io/weather-dahboard/" target="_blank">Weather
+                            Dashboard</a>
+                    </div>
+                    <h6 class="center"><br>
+                        <a href="https://github.com/jocelynrem/weather-dahboard" target="_blank">github
+                            repository</a>
+                    </h6>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="contact">
-        <h2 id="contact" class="sidebar">Contact</h2>
         <p>Some Contact Information</p>
-    </div>     
-           
-        <div class="resume">
-            <h2 id="resume" class="sidebar">Resume</h2> 
-            <p>Some awesome future resume</p>
-        </div> 
-        
+    </div>
 
-        <footer>Footer</footer>
+    <div class="resume">
+        <p>Some awesome future resume</p>
+    </div>
+
+
+    <footer>Footer</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,268 @@
+$yellow: #FBE8A6;
+$orange: #F4976C;
+$drkBlue: #303C6C;
+$regBlue: #B4DFE5;
+$ltBlue: #D2FDFF;
+
+
+body {
+    font-family: 'Farro', sans-serif;
+    background-image: url(/assets/images/background.png);
+}
+
+
+p {
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cardText {
+    padding-top: 25%;
+}
+@media screen and (max-width: 600px) {
+    .cardText {
+        padding-top: 15%;
+    }
+}
+
+/* Header Information */
+header {
+    background-image: url(/assets/images/clouds.png);
+    background-repeat: no-repeat;
+}
+
+#bio {
+  margin-top: 200px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+    #bio {
+        margin-left: 30px;
+    } 
+}
+
+@media screen and (max-width: 700px) {
+    #bio {
+        margin-left: 50px;
+    } 
+}
+@media screen and (max-width: 600px) {
+    #bio {
+        margin: 0;
+    } 
+}
+
+
+/* Header- NAVIGATION */
+.navHolder {
+    background-color: $orange;
+    padding: 15px 0;
+    padding-right: 60px;
+    margin-top: -50px;
+    background-size: 100%;
+    
+}
+
+    .nav {
+        display: inline;
+        margin-right: 20px;
+        padding: 15px 15px;
+        font-size: 1.5rem;
+    }
+
+    .nav:hover{
+        cursor: pointer;
+        border-radius: 3px;
+        background-color: $ltBlue;
+    }
+ 
+
+//  @media only screen and (max-width: 600px) {
+//     .sidebar {
+//     margin-left: -200px;
+//     visibility: hidden;
+//     }
+//   }
+
+//   .portfolio {
+//       flex-wrap: wrap;
+//   }
+
+//   .placeholder {
+//       margin-left: 30px;
+//   }
+
+//   .portfolio p {
+//       margin-left: 30px;
+//       padding: 0;
+//   }
+
+
+/* Start ABOUT ME section */
+// .about-me {
+//     display: grid;
+//     margin-top: 20px;
+//     grid-template-columns: minnmax(100px, 1fr) minnmax(100px, 1fr) 2fr;
+//     grid-template-rows: auto;
+// }
+
+// .about-me #about {
+//     grid-column: 1;
+//     grid-row: 1 span / 2;
+//     align-self: center;
+// }
+
+// .about-me img {
+//     grid-row: 1 / span 2;
+//     grid-column: 2;
+//     align-self: center;
+//     object-fit: cover;
+//     object-position: center center;
+//     width: 80%;
+//     height: 80%;
+//     border: transparent;
+//     border-radius: 200px;
+//     margin-left: 10%;
+// }
+
+// .about-me h4 {
+//     font-size: 28px;
+//     grid-column: 3;
+//     grid-row: 1;
+//     padding: 10% 0 7% 0;
+//     align-items: flex-end;
+// }
+
+// .about-me p {
+//     grid-column: 3;
+//     grid-row: 2;
+//     border-bottom: solid var(--dark-pink) 1px;
+//     margin-bottom: 15%;    
+//     margin-right: 15%;
+//     display: flex;
+//     padding-bottom: 20px;
+// }
+
+/* Start PORTFOLIO section */
+
+.portfolio {
+    display: flex;
+    margin-top: 20px;
+    gap: 0 25px;
+}
+
+#portfolio {
+    flex-basis: 23%;
+}
+
+.portfolio h3 {
+    align-self: center;
+    margin: 100px 15px;
+}
+
+.portfolio p {
+    margin: 30% 15px;
+    padding: 0 20px;
+    border-bottom: solid 1px var(--light);
+    border-left: solid 1px var(--light);
+}
+
+#one {
+    flex-basis: 25%;
+    background-color: var(--gray);
+    margin: .5% 0;
+}
+
+#one:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+.placeholder {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#two {
+    background-color: var(--pink);
+    margin: 5px;
+}
+
+#two:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+#three {
+    background-color: var(--gray);
+    margin: 5px;
+}
+
+#three:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+#four {
+    background-color: var(--pink);
+    margin: 5px;
+}
+
+#four:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+#five {
+    background-color: var(--gray);
+    margin: 5px;
+}
+
+#five:hover {
+    background-color: var(--dark-pink);
+    cursor: pointer;
+    transition-duration: .25s;
+}
+
+/* Start CONTACT section */
+.contact {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: 1fr 3fr;
+}
+.contact p {
+    text-align: center;
+}
+
+/* Start RESUME section */
+.resume {
+    display: grid;
+    margin-top: 200px;
+    grid-template-columns: 1fr 3fr;
+}
+
+.resume p {
+    padding-top: 30px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    margin-top: 200px;
+    padding: 10px;
+    color: var(--light);
+    background-color: var(--dark-pink);
+    justify-content: center;
+}
