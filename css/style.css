@@ -3,32 +3,13 @@ body {
   background-image: url(/assets/images/background.png);
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.25;
-}
-
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.cardText {
-  padding-top: 25%;
-}
-
-@media screen and (max-width: 600px) {
-  .cardText {
-    padding-top: 15%;
-  }
-}
 /* Header Information */
 header {
   background-image: url(/assets/images/clouds.png);
   background-repeat: no-repeat;
 }
 
-#bio {
+#name {
   margin-top: 200px;
   margin-bottom: 0;
   padding: 0;
@@ -56,6 +37,7 @@ header {
   padding-right: 60px;
   margin-top: -50px;
   background-size: 100%;
+  border-bottom: dashed 2px #D2FDFF;
 }
 
 .nav {
@@ -71,122 +53,76 @@ header {
   background-color: #D2FDFF;
 }
 
-/* Start ABOUT ME section */
+/* ABOUT ME section */
+.about-me {
+  background-color: rgba(210, 255, 255, 0.4);
+  border-bottom: dashed 2px #F4976C;
+  width: 100%;
+  margin-top: 5%;
+  padding: 2% 0;
+}
+.about-me img {
+  object-fit: cover;
+  object-position: center center;
+  border: transparent;
+  border-radius: 250px;
+  max-width: 250px;
+  height: auto;
+  margin: 4% 0;
+}
+.about-me h4 {
+  font-size: 28px;
+  padding: 5% 0 0 0;
+}
+.about-me li {
+  line-height: 1.7;
+}
+
 /* Start PORTFOLIO section */
 .portfolio {
-  display: flex;
-  margin-top: 20px;
-  gap: 0 25px;
+  background-color: rgba(210, 255, 255, 0.4);
+  border-bottom: dashed 2px #F4976C;
+  width: 100%;
+  margin-top: 5%;
+  padding: 2% 0;
 }
 
-#portfolio {
-  flex-basis: 23%;
+.cardText {
+  padding-top: 15%;
 }
 
-.portfolio h3 {
-  align-self: center;
-  margin: 100px 15px;
+@media screen and (max-width: 600px) {
+  .cardText {
+    padding-top: 15%;
+  }
 }
-
-.portfolio p {
-  margin: 30% 15px;
-  padding: 0 20px;
-  border-bottom: solid 1px var(--light);
-  border-left: solid 1px var(--light);
-}
-
-#one {
-  flex-basis: 25%;
-  background-color: var(--gray);
-  margin: 0.5% 0;
-}
-
-#one:hover {
-  background-color: var(--dark-pink);
-  cursor: pointer;
-  transition-duration: 0.25s;
-}
-
-.placeholder {
-  flex-basis: 50%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-#two {
-  background-color: var(--pink);
-  margin: 5px;
-}
-
-#two:hover {
-  background-color: var(--dark-pink);
-  cursor: pointer;
-  transition-duration: 0.25s;
-}
-
-#three {
-  background-color: var(--gray);
-  margin: 5px;
-}
-
-#three:hover {
-  background-color: var(--dark-pink);
-  cursor: pointer;
-  transition-duration: 0.25s;
-}
-
-#four {
-  background-color: var(--pink);
-  margin: 5px;
-}
-
-#four:hover {
-  background-color: var(--dark-pink);
-  cursor: pointer;
-  transition-duration: 0.25s;
-}
-
-#five {
-  background-color: var(--gray);
-  margin: 5px;
-}
-
-#five:hover {
-  background-color: var(--dark-pink);
-  cursor: pointer;
-  transition-duration: 0.25s;
-}
-
 /* Start CONTACT section */
 .contact {
-  display: grid;
-  margin-top: 200px;
-  grid-template-columns: 1fr 3fr;
-}
-
-.contact p {
-  text-align: center;
+  background-color: rgba(210, 255, 255, 0.4);
+  border-bottom: dashed 2px #F4976C;
+  width: 100%;
+  margin-top: 5%;
+  padding: 2% 0;
+  line-height: 2;
 }
 
 /* Start RESUME section */
 .resume {
-  display: grid;
-  margin-top: 200px;
-  grid-template-columns: 1fr 3fr;
-}
-
-.resume p {
-  padding-top: 30px;
-  text-align: center;
+  background-color: rgba(210, 255, 255, 0.4);
+  border-bottom: dashed 2px #F4976C;
+  width: 100%;
+  margin-top: 5%;
+  padding: 2% 0;
+  padding: 2% 0;
 }
 
 footer {
-  display: flex;
-  margin-top: 200px;
+  background-color: rgba(210, 255, 255, 0.4);
+  border-bottom: dashed 2px #F4976C;
+  width: 100%;
+  margin-top: 5%;
+  padding: 2% 0;
   padding: 10px;
-  color: var(--light);
-  background-color: var(--dark-pink);
-  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
